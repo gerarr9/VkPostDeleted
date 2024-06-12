@@ -3,10 +3,10 @@ package vkpage;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 
-public class MainPage {
+public class MainPageVk {
 
 
-    public MainPage delete() {
+    public MainPageVk delete() {
         String xpath = "//span[contains(@class, 'PostHeaderActionsUiActionMenuIcon')]";
         $(byXpath(xpath));
         return this;

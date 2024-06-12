@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigLoader {
-    private Properties properties = new Properties();
+    private final Properties properties = new Properties();
 
     public ConfigLoader() {
-пш        try (FileInputStream input = new FileInputStream("config.properties")) {
+        try (FileInputStream input = new FileInputStream("config.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -22,5 +22,12 @@ public class ConfigLoader {
 
     public String getPassword() {
         return properties.getProperty("password");
+    }
+    public String getLoginMail() {
+        return properties.getProperty("loginMail");
+    }
+
+    public String getPasswordMail() {
+        return properties.getProperty("passMail");
     }
 }
