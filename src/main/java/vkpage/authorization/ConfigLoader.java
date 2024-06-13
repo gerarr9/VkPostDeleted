@@ -1,4 +1,4 @@
-package vkpage;
+package vkpage.authorization;
 
 import java.io.FileInputStream;
 import java.io.IOException;

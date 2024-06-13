@@ -1,4 +1,4 @@
-package vkpage;
+package vkpage.authorization;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
@@ -54,11 +54,11 @@ public class MailRuPage {
         return this;
     }
 
-    public MainPageVk setTokenAndPassword(String password) {
+    public TapePageVk setTokenAndPassword(String password) {
         $(By.xpath("//input[@name='otp-cell']")).shouldBe(Condition.visible).sendKeys(token);
         $(By.xpath("//input[@name='password']")).shouldBe(Condition.visible).sendKeys(password);
         $(By.xpath("//span[@class='vkuiButton__in']")).click();
-        return page(MainPageVk.class);
+        return page(TapePageVk.class);
     }
 
     private void openNewWindow() {

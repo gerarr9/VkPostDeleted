@@ -1,6 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import org.testng.annotations.BeforeMethod;
-import vkpage.ConfigLoader;
+import vkpage.authorization.ConfigLoader;
 
 
 import static com.codeborne.selenide.Selenide.open;

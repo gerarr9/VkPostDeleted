@@ -1,4 +1,4 @@
-package vkpage;
+package vkpage.authorization;
 
 
 import static com.codeborne.selenide.Selectors.*;
